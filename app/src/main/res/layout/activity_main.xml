@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:translationY="275dp"
-        tools:layout_editor_absoluteY="50dp">
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <CalendarView
+            android:id="@+id/calendarView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -144,47 +145,5 @@
             android:visibility="visible" />
 
     </TableRow>
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="350dp"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="300dp"
-        app:layout_constraintEnd_toStartOf="@+id/tableRow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText2"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="400dp"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="1400dp"
-        android:autoText="false"
-        android:background="#5E00BCD4"
-        android:capitalize="none"
-        android:ems="10"
-        android:fontFamily="casual"
-        android:gravity="center|top"
-        android:inputType="textMultiLine"
-        android:padding="10dp"
-        android:password="false"
-        android:phoneNumber="false"
-        android:saveEnabled="false"
-        android:scrollbarStyle="outsideInset"
-        android:text="A lot of text blah blah"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#2855C8"
-        android:textColorHighlight="#FF0000"
-        android:textColorHint="#000000"
-        android:textColorLink="#FF0000"
-        app:layout_constraintBottom_toTopOf="@+id/tableRow"
-        app:layout_constraintEnd_toStartOf="@+id/tableRow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
