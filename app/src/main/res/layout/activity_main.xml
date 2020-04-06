@@ -143,33 +143,14 @@
             android:typeface="monospace"
             android:visibility="visible" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:rotation="5"
-            android:selectAllOnFocus="false"
-            android:shadowColor="#5A4949"
-            android:shadowDx="5"
-            android:shadowDy="5"
-            android:shadowRadius="5"
-            android:text="5"
-            android:textAllCaps="false"
-            android:textColorHighlight="#9F0000"
-            android:textColorLink="#F39F46"
-            android:textStyle="bold|italic"
-            android:typeface="monospace"
-            android:visibility="visible" />
-
     </TableRow>
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="410dp"
-        android:layout_marginLeft="410dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginLeft="350dp"
         android:layout_marginTop="300dp"
         app:layout_constraintEnd_toStartOf="@+id/tableRow"
         app:layout_constraintStart_toStartOf="parent"
